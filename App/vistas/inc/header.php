@@ -30,6 +30,13 @@
                             <a class="nav-link" aria-current="page" href="<?php echo RUTA_URL ?>/usuarios">Usuarios</a>
                         <?php endif ?>
                     </li>
+                    <li class="nav-item">
+                        <?php if (isset($datos['menuActivo']) && $datos['menuActivo'] == 2 ): ?>
+                            <a class="nav-link active" aria-current="page" href="<?php echo RUTA_URL ?>/roles">Roles</a>
+                        <?php else: ?>
+                            <a class="nav-link" aria-current="page" href="<?php echo RUTA_URL ?>/roles">Roles</a>
+                        <?php endif ?>
+                    </li>
 
                 </ul>
                 

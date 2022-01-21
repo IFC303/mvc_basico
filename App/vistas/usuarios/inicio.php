@@ -12,17 +12,17 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach($datos['usuarios'] as $uruario): ?>
+            <?php foreach($datos['usuarios'] as $usuario): ?>
                 <tr>
-                    <td><?php echo $uruario->id_usuario ?></td>
-                    <td><?php echo $uruario->nombre ?></td>
-                    <td><?php echo $uruario->email ?></td>
-                    <td><?php echo $uruario->telefono ?></td>
-                    <td><?php echo $uruario->id_rol ?></td>
+                    <td><?php echo $usuario->id_usuario ?></td>
+                    <td><?php echo $usuario->nombre ?></td>
+                    <td><?php echo $usuario->email ?></td>
+                    <td><?php echo $usuario->telefono ?></td>
+                    <td><?php echo $usuario->id_rol ?></td>
                     <td>
-                        <a href="<?php echo RUTA_URL?>/usuarios/editar/<?php echo $uruario->id_usuario ?>">Editar</a>
+                        <a href="<?php echo RUTA_URL?>/usuarios/editar/<?php echo $usuario->id_usuario ?>">Editar</a>
                         &nbsp;&nbsp;&nbsp;
-                        <a href="<?php echo RUTA_URL?>/usuarios/borrar/<?php echo $uruario->id_usuario ?>">Borrar</a>
+                        <a href="<?php echo RUTA_URL?>/usuarios/borrar/<?php echo $usuario->id_usuario ?>">Borrar</a>
                     </td>
                 </tr>
             <?php endforeach ?>
